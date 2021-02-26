@@ -1,0 +1,152 @@
+
+/* Main architecture  */
+
+/*
+
+----------------------------------------------------------
+|                50px
+|          -------------------------
+|          | header                |
+|          -------------------------
+|                50px
+|          -------------------------
+|          | container             |
+|          |                       |
+|          |                       |
+|          |                       |
+|          |                       |
+|          |                       |
+|          |                       |
+|          -------------------------
+|                150px
+----------------------------------------------------------
+
+*/
+
+
+
+/* horizontal margins */
+
+@media only screen and (min-width: 400px) { #container, #header { width: 400px; } }
+@media only screen and (min-width: 500px) { #container, #header { width: 500px; } }
+@media only screen and (min-width: 600px) { #container, #header { width: 600px; } }
+@media only screen and (min-width: 700px) { #container, #header { width: 700px; } }
+@media only screen and (min-width: 800px) { #container, #header { width: 800px; } }
+
+#container, #header {
+  margin: auto;
+}
+
+/* vertical margins */
+#container {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+#header {
+  margin-top: 50px;
+}
+
+/*
+Header architecture
+
+----------------------------------------------------------
+|<-5px->header_title                   header_logo<-5px->|
+----------------------------------------------------------
+*/
+
+#header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header__logo {
+  margin-right: 5px;
+}
+
+#header__title {
+  margin-left: 5px;
+}
+
+/* ** font ** */
+#header, h1, h2, h3, h4, h5, h6, a {
+  font-family: sans-serif;
+}
+
+/* ** font size ** */
+
+/* The standard preset:
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+p, pre, code {
+  font-size: 12px;
+}
+*/
+
+pre, code {
+  font-size: 16px; /* same size as p -- NB: this overrides the preset */
+}
+
+#header__title {
+  font-size: 16px; /* same size as p */
+}
+
+blockquote {
+  font-size: 24px; /* same size as h2 */
+}
+
+#header__logo {
+  font-size: 32px; /* same size as h1 */
+}
+
+/* ** colors ** */
+
+/*
+  p, pre, code {
+  color: black;
+  }
+*/
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: #404040;
+}
+
+#header, #header a, blockquote {
+  color: #606060;
+}
+
+
+/* ** Others stuff ** */
+
+#header__logo {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  line-height: 1.5em;
+}
+
+img {
+  /* center img: */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* prevent them to be too large */
+  max-width: 100%;
+}
+
+pre {
+  overflow: auto;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
