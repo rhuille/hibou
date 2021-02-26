@@ -16,7 +16,7 @@ It makes easy to create and share an article with data visualization in it.
 ## How it works
 
 Write your article in markdown and store on a gist within an `index.md` file.
-You can then visualize it go on: `http://0.0.0.0:8080/#/gist/{gist_id}`
+You can then visualize it go on: `https://rhuille.github.io/hibou/#/gist/{gist_id}`
 
 For example, this gist:
 
@@ -24,7 +24,7 @@ https://gist.github.com/rhuille/4ee50b80364d1f2de18ac708ae91c7ec
 
 can be visualized with Hibou here:
 
-http://0.0.0.0:8080/#/gist/4ee50b80364d1f2de18ac708ae91c7ec
+https://rhuille.github.io/hibou/#/gist/4ee50b80364d1f2de18ac708ae91c7ec
 
 
 ## Use Vega in markdown
